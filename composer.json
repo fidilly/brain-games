@@ -6,5 +6,8 @@
             "email": "fidship@hotmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
 }
