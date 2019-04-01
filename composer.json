@@ -1,5 +1,10 @@
 {
     "name": "fidilly/brain-games",
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
     "licence": "MIT",
     "authors": [
         {
@@ -7,7 +12,9 @@
             "email": "fidship@hotmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
     "bin": [
         "bin/brain-games"
     ]

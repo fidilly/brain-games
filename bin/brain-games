@@ -2,5 +2,8 @@
 
 <?php
 
-print('Welcome to the Brain Games!');
-print("\n");
+use function BrainGames\Cli\run;
+
+require_once __DIR__ . '/../vendor/autoload.php'; 
+
+run();
