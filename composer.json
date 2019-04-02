@@ -1,11 +1,12 @@
 {
     "name": "fidilly/brain-games",
     "description": "the first PHP project",
-    "type": "library",
+    "type": "project",
     "keywords": ["PHP", "project", "game", "CLI"],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/BrainEven.php"
         ]
     },
     "licence": "MIT",
@@ -22,7 +23,8 @@
         "squizlabs/php_codesniffer": "3.*"
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "scripts": {
         "phpcs": "phpcs"
