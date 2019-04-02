@@ -1,5 +1,8 @@
 {
     "name": "fidilly/brain-games",
+    "description": "the first PHP project",
+    "type": "library",
+    "keywords": ["PHP", "project", "game", "CLI"],
     "autoload": {
         "files": [
             "src/Cli.php"
