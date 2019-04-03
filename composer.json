@@ -6,7 +6,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/BrainEven.php"
+            "src/BrainEven.php",
+            "src/Engine.php",
+            "src/Games/BrainCalc.php"
         ]
     },
     "licence": "MIT",
@@ -24,7 +26,8 @@
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "scripts": {
         "phpcs": "phpcs"
