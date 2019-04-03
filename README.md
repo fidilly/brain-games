@@ -11,10 +11,10 @@ Step 2:
 --------
 [![asciicast](https://asciinema.org/a/238402.svg)](https://asciinema.org/a/238402)
 
-Step 3:
+Step 4:
 --------
 [![asciicast](https://asciinema.org/a/238458.svg)](https://asciinema.org/a/238458)
 
-Step 4:
+Step 5:
 -------
 [![asciicast](https://asciinema.org/a/238705.svg)](https://asciinema.org/a/238705)
