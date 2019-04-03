@@ -6,9 +6,11 @@ Brain games
 Step 1:
 --------
 [![asciicast](https://asciinema.org/a/238143.svg)](https://asciinema.org/a/238143)
+
 Step 2:
 --------
 [![asciicast](https://asciinema.org/a/238402.svg)](https://asciinema.org/a/238402)
+
 Step 3:
 --------
 [![asciicast](https://asciinema.org/a/238458.svg)](https://asciinema.org/a/238458)
