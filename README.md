@@ -14,3 +14,7 @@ Step 2:
 Step 3:
 --------
 [![asciicast](https://asciinema.org/a/238458.svg)](https://asciinema.org/a/238458)
+
+Step 4:
+-------
+[![asciicast](https://asciinema.org/a/238705.svg)](https://asciinema.org/a/238705)
