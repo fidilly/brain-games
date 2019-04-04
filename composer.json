@@ -8,7 +8,8 @@
             "src/Cli.php",
             "src/Engine.php",
             "src/Games/BrainEven.php",
-            "src/Games/BrainCalc.php"
+            "src/Games/BrainCalc.php",
+            "src/Games/BrainGcd.php"
         ]
     },
     "licence": "MIT",
@@ -27,7 +28,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "scripts": {
         "phpcs": "phpcs"
