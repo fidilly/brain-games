@@ -5,26 +5,28 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
-function logic($numberOfQuestions, $message, $rules)
+const NUMBER_OF_QUESTIONS = 3;
+
+function logic($gameDesctiption, $answerAndQuestionData)
 {
     line('Welcome to the Brain Games!');
-    line($message);
+    line($gameDesctiption);
     $name = prompt('May I have your name?');
     line("Hello, $name!\n");
 
-    for ($correctAnswerCounter = 1; $correctAnswerCounter <= $numberOfQuestions; $correctAnswerCounter++) {
-        [$question, $expected] = $rules();
+    for ($correctAnswerCounter = 1; $correctAnswerCounter <= NUMBER_OF_QUESTIONS; $correctAnswerCounter++) {
+        [$question, $correctAnswer] = $answerAndQuestionData();
         line("Question: $question");
         $answer = prompt('Your answer');
 
-        if ($expected == $answer) {
+        if ($correctAnswer == $answer) {
             line('Correct!');
         } else {
-            line("$answer is wrong answer ;(. Correct answer was $expected");
+            line("$answer is wrong answer ;(. Correct answer was $correctAnswer");
             break;
         }
 
-        if ($correctAnswerCounter === $numberOfQuestions) {
+        if ($correctAnswerCounter === NUMBER_OF_QUESTIONS) {
             line("Congratulations, $name!");
             break;
         }
