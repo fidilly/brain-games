@@ -7,7 +7,6 @@
         "files": [
             "src/Cli.php",
             "src/Engine.php",
-            "src/Gcd.php",
             "src/IsPrime.php",
             "src/Games/BrainEven.php",
             "src/Games/BrainCalc.php",

@@ -3,7 +3,6 @@
 namespace BrainGames\Games\BrainGcd;
 
 use function BrainGames\Engine\startGame;
-use function BrainGames\Gcd\getGcd;
 
 const GAME_DESCRITPION = 'Find the greatest common divisor of given numbers';
 
@@ -17,4 +16,14 @@ function getGameData()
     };
 
     startGame(GAME_DESCRITPION, $generator);
+}
+
+function getGcd($numOne, $numTwo)
+{
+    $divisor = min($numOne, $numTwo);
+    while ($numOne % $divisor !== 0 || $numTwo % $divisor !== 0) {
+        $divisor--;
+    }
+    
+    return $divisor;
 }
