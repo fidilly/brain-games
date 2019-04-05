@@ -15,7 +15,7 @@ function getGameData()
         $stepValue = rand(1, 10);
         $progression[] = $startValue;
 
-        for ($step = 1; $step < PROGRESSION_LENGTH; $step++) {
+        for ($i = 1; $i < PROGRESSION_LENGTH; $i++) {
             $progression[] = $progression[(count($progression) - 1)] + $stepValue;
         }
         $toHide = rand(0, count($progression) - 1);

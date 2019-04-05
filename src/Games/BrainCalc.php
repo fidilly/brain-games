@@ -5,14 +5,14 @@ namespace BrainGames\Games\BrainCalc;
 use function BrainGames\Engine\startGame;
 
 const GAME_DESCRITPION = 'What is the result of the expression?';
+const OPERATORS = ['+', '-', '*'];
 
 function getGameData()
 {
     $generator = function () {
         $questionOperandOne = rand(0, 20);
         $questionOperandTwo = rand(0, 20);
-        $operators = ['+', '-', '*'];
-        $questionOperator = array_rand(array_flip($operators));
+        $questionOperator = array_rand(array_flip(OPERATORS));
         switch ($questionOperator) {
             case '+':
                 $result = $questionOperandOne + $questionOperandTwo;

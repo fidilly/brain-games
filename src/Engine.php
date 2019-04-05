@@ -25,6 +25,6 @@ function startGame($gameDesctiption, $answerAndQuestionData)
             line("$answer is wrong answer ;(. Correct answer was $correctAnswer");
             return;
         }
-            line("Congratulations, $name!");
     }
+            line("Congratulations, $name!");
 }

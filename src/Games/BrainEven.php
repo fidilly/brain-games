@@ -10,7 +10,8 @@ function getGameData()
 {
     $generator = function () {
         $question = rand();
-        return [$question, $question % 2 === 0 ? 'yes' : 'no'];
+        $correctAnswer = ($question % 2 === 0 ? 'yes' : 'no');
+        return [$question, $correctAnswer];
     };
 
     startGame(GAME_DESCRITPION, $generator);
