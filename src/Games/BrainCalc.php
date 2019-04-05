@@ -2,17 +2,17 @@
 
 namespace BrainGames\Games\BrainCalc;
 
-use function BrainGames\Engine\logic;
+use function BrainGames\Engine\startGame;
 
 const GAME_DESCRITPION = 'What is the result of the expression?';
 
-function data()
+function getGameData()
 {
     $generator = function () {
         $questionOperandOne = rand(0, 20);
         $questionOperandTwo = rand(0, 20);
         $operators = ['+', '-', '*'];
-        $questionOperator = $operators[rand(0, count($operators) - 1)];
+        $questionOperator = array_rand(array_flip($operators));
         switch ($questionOperator) {
             case '+':
                 $result = $questionOperandOne + $questionOperandTwo;
@@ -27,5 +27,5 @@ function data()
         return ["$questionOperandOne $questionOperator $questionOperandTwo", $result];
     };
 
-    logic(GAME_DESCRITPION, $generator);
+    startGame(GAME_DESCRITPION, $generator);
 }

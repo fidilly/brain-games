@@ -2,16 +2,16 @@
 
 namespace BrainGames\Games\BrainEven;
 
-use function BrainGames\Engine\logic;
+use function BrainGames\Engine\startGame;
 
 const GAME_DESCRITPION = "Answer \"yes\" if number even otherwise answer \"no\"";
 
-function data()
+function getGameData()
 {
     $generator = function () {
         $question = rand();
         return [$question, $question % 2 === 0 ? 'yes' : 'no'];
     };
 
-    logic(GAME_DESCRITPION, $generator);
+    startGame(GAME_DESCRITPION, $generator);
 }
