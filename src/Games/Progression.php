@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Games\BrainProgression;
+namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\startGame;
 
@@ -10,7 +10,7 @@ const HIDESIGN = "..";
 
 function getGameData()
 {
-    $generator = function () {
+    $generateData = function () {
         $startValue = rand(1, 10);
         $stepValue = rand(1, 10);
         $progression[] = $startValue;
@@ -27,5 +27,5 @@ function getGameData()
         return [$question, $correctAnswer];
     };
 
-    startGame(GAME_DESCRITPION, $generator);
+    startGame(GAME_DESCRITPION, $generateData);
 }

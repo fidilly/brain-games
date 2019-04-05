@@ -26,5 +26,5 @@ function startGame($gameDesctiption, $answerAndQuestionData)
             return;
         }
     }
-            line("Congratulations, $name!");
+    line("Congratulations, $name!");
 }

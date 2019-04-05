@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Games\BrainCalc;
+namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\startGame;
 
@@ -9,7 +9,7 @@ const OPERATORS = ['+', '-', '*'];
 
 function getGameData()
 {
-    $generator = function () {
+    $generateData = function () {
         $questionOperandOne = rand(0, 20);
         $questionOperandTwo = rand(0, 20);
         $questionOperator = array_rand(array_flip(OPERATORS));
@@ -27,5 +27,5 @@ function getGameData()
         return ["$questionOperandOne $questionOperator $questionOperandTwo", $result];
     };
 
-    startGame(GAME_DESCRITPION, $generator);
+    startGame(GAME_DESCRITPION, $generateData);
 }
