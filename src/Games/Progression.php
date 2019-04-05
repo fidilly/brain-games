@@ -19,7 +19,7 @@ function getGameData()
             $progression[] = $startValue + $stepValue * $i;
         }
 
-        $indexToHide = array_rand($progression); 
+        $indexToHide = array_rand($progression);
         $correctAnswer = $progression[$indexToHide];
         $progression[$indexToHide] = HIDESIGN;
         $question = implode(" ", $progression);
