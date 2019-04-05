@@ -8,9 +8,11 @@
             "src/Cli.php",
             "src/Engine.php",
             "src/Gcd.php",
+            "src/IsPrime.php",
             "src/Games/BrainEven.php",
             "src/Games/BrainCalc.php",
             "src/Games/BrainGcd.php",
+            "src/Games/BrainPrime.php",
             "src/Games/BrainProgression.php"
         ]
     },
@@ -32,6 +34,7 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
+        "bin/brain-prime",
         "bin/brain-progression"
     ],
     "scripts": {
