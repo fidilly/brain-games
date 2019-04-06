@@ -50,7 +50,7 @@ composer global remove fidilly/brain-games
 
 [![asciicast](https://asciinema.org/a/239209.svg)](https://asciinema.org/a/239209)
 
-if the game is installed locally, then delete the brain-games directory.
+If the game is installed locally, then delete the brain-games directory.
 
 Description and usage
 -----

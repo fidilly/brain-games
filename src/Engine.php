@@ -7,7 +7,7 @@ use function \cli\prompt;
 
 const NUMBER_OF_QUESTIONS = 3;
 
-function playGame($getGameDesctiption, $getAnswerAndQuestionData)
+function playGame($gameDesctiption, $getAnswerAndQuestionData)
 {
     line('Welcome to the Brain Games!');
     line($getGameDesctiption);
