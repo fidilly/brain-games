@@ -12,7 +12,7 @@ function getGameData()
     $generateData = function () {
         $questionOperandOne = rand(0, 20);
         $questionOperandTwo = rand(0, 20);
-        $questionOperator = OPERATORS[array_rand(OPERATORS)]; 
+        $questionOperator = OPERATORS[array_rand(OPERATORS)];
         switch ($questionOperator) {
             case '+':
                 $correctAnswer = $questionOperandOne + $questionOperandTwo;

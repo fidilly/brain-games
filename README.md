@@ -19,7 +19,7 @@ Brain games can be installed globally or locally, with ***Composer*** package ma
 
 ###### Global installation:
 
-< composer global require fidilly/brain-games >
+<composer global require fidilly/brain-games >
 
 **example:**
 
@@ -27,7 +27,7 @@ Brain games can be installed globally or locally, with ***Composer*** package ma
 
 ###### Local installation:
 
-< composer create-project fidilly/brain-games >
+<composer create-project fidilly/brain-games >
 
 **example:**
 
@@ -38,7 +38,7 @@ Uninstall
 
 If the game is installed globally:
 
-< composer global remove fidilly/brain-games >
+<composer global remove fidilly/brain-games >
 
 **example:**
 
