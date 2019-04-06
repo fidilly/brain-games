@@ -17,7 +17,7 @@ Installation
 
 Brain games can be installed globally or locally, with ***Composer*** package manager:
 
-###### Global installation:
+### Global installation:
 
 ```
 composer global require fidilly/brain-games
@@ -27,7 +27,7 @@ composer global require fidilly/brain-games
 
 [![asciicast](https://asciinema.org/a/239206.svg)](https://asciinema.org/a/239206)
 
-###### Local installation:
+### Local installation:
 
 ```
 composer create-project fidilly/brain-games
@@ -57,7 +57,7 @@ Description and usage
 
 To start the game, enter the name of the game in the terminal. 
 
-###### brain-games
+### brain-games
 
 Says Hello to user.
 
@@ -65,7 +65,7 @@ Says Hello to user.
 
 [![asciicast](https://asciinema.org/a/239211.svg)](https://asciinema.org/a/239211)
 
-###### brain-even
+### brain-even
 
 You must answer an even number or not.
 
@@ -74,7 +74,7 @@ You must answer an even number or not.
 [![asciicast](https://asciinema.org/a/239212.svg)](https://asciinema.org/a/239212)
 
 
-###### brain-calc
+### brain-calc
 
 You need to calculate the mathematical expression shown on the screen.
 
@@ -82,7 +82,7 @@ You need to calculate the mathematical expression shown on the screen.
 
 [![asciicast](https://asciinema.org/a/239213.svg)](https://asciinema.org/a/239213)
 
-###### brain-gcd
+### brain-gcd
 
 You need to find the greatest common divisor.
 
@@ -90,7 +90,7 @@ You need to find the greatest common divisor.
 
 [![asciicast](https://asciinema.org/a/239214.svg)](https://asciinema.org/a/239214)
 
-###### brain-progression
+### brain-progression
 
 You need to find missing number from progression.
 
@@ -98,7 +98,7 @@ You need to find missing number from progression.
 
 [![asciicast](https://asciinema.org/a/239215.svg)](https://asciinema.org/a/239215)
 
-###### brain-prime
+### brain-prime
 
 You need to check is the number simple or not.
 
