@@ -12,7 +12,8 @@ function getGameData()
         $questionOperandOne = rand(1, 100);
         $questionOperandTwo = rand(1, 100);
         $correctAnswer = getGcd($questionOperandOne, $questionOperandTwo);
-        return ["$questionOperandOne $questionOperandTwo", $correctAnswer];
+        $question = "$questionOperandOne $questionOperandTwo";
+        return [$question, $correctAnswer];
     };
 
     startGame(GAME_DESCRITPION, $generateData);

@@ -10,7 +10,10 @@ function getGameData()
 {
     $generateData = function () {
         $question = rand();
-        $correctAnswer = ($question % 2 === 0 ? 'yes' : 'no');
+         $isEven = function ($number) {
+            return $number % 2 === 0 ? 'yes' : 'no';
+        };
+        $correctAnswer = $isEven($question);
         return [$question, $correctAnswer];
     };
 

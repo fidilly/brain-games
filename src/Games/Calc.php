@@ -12,19 +12,20 @@ function getGameData()
     $generateData = function () {
         $questionOperandOne = rand(0, 20);
         $questionOperandTwo = rand(0, 20);
-        $questionOperator = array_rand(array_flip(OPERATORS));
+        $questionOperator = OPERATORS[array_rand(OPERATORS)]; 
         switch ($questionOperator) {
             case '+':
-                $result = $questionOperandOne + $questionOperandTwo;
+                $correctAnswer = $questionOperandOne + $questionOperandTwo;
                 break;
             case '-':
-                $result = $questionOperandOne - $questionOperandTwo;
+                $correctAnswer = $questionOperandOne - $questionOperandTwo;
                 break;
             case '*':
-                $result = $questionOperandOne * $questionOperandTwo;
+                $correctAnswer = $questionOperandOne * $questionOperandTwo;
                 break;
         }
-        return ["$questionOperandOne $questionOperator $questionOperandTwo", $result];
+        $question = "$questionOperandOne $questionOperator $questionOperandTwo";
+        return [$question, $correctAnswer];
     };
 
     startGame(GAME_DESCRITPION, $generateData);
