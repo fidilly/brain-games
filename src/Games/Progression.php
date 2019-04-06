@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Progression;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\playGame;
 
 const GAME_DESCRITPION = 'What number is missing in the progression?';
 const PROGRESSION_LENGTH = 10;
@@ -25,5 +25,5 @@ function getGameData()
         return [$question, $correctAnswer];
     };
 
-    startGame(GAME_DESCRITPION, $generateData);
+    playGame(GAME_DESCRITPION, $generateData);
 }

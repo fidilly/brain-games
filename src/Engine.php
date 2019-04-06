@@ -7,15 +7,15 @@ use function \cli\prompt;
 
 const NUMBER_OF_QUESTIONS = 3;
 
-function startGame($gameDesctiption, $answerAndQuestionData)
+function playGame($getGameDesctiption, $getAnswerAndQuestionData)
 {
     line('Welcome to the Brain Games!');
-    line($gameDesctiption);
+    line($getGameDesctiption);
     $name = prompt('May I have your name?');
     line("Hello, $name!\n");
 
     for ($i = 1; $i <= NUMBER_OF_QUESTIONS; $i++) {
-        [$question, $correctAnswer] = $answerAndQuestionData();
+        [$question, $correctAnswer] = $getAnswerAndQuestionData();
         line("Question: $question");
         $answer = prompt('Your answer');
 

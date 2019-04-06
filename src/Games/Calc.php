@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Calc;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\playGame;
 
 const GAME_DESCRITPION = 'What is the result of the expression?';
 const OPERATORS = ['+', '-', '*'];
@@ -28,5 +28,5 @@ function getGameData()
         return [$question, $correctAnswer];
     };
 
-    startGame(GAME_DESCRITPION, $generateData);
+    playGame(GAME_DESCRITPION, $generateData);
 }
