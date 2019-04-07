@@ -12,15 +12,16 @@ function getGameData()
     $generateData = function () {
         $startValue = rand(1, 10);
         $stepValue = rand(1, 10);
+        $progression = [];
 
         for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
-            $progressionNumbers[] = $startValue + $stepValue * $i;
+            $progression[] = $startValue + $stepValue * $i;
         }
 
-        $indexToHide = array_rand($progressionNumbers);
-        $correctAnswer = $progressionNumbers[$indexToHide];
-        $progressionNumbers[$indexToHide] = "..";
-        $question = implode(" ", $progressionNumbers);
+        $indexToHide = array_rand($progression);
+        $correctAnswer = $progression[$indexToHide];
+        $progression[$indexToHide] = "..";
+        $question = implode(" ", $progression);
         
         return [$question, $correctAnswer];
     };

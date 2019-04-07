@@ -9,10 +9,10 @@ const GAME_DESCRITPION = 'Find the greatest common divisor of given numbers';
 function getGameData()
 {
     $generateData = function () {
-        $questionOperandOne = rand(1, 100);
-        $questionOperandTwo = rand(1, 100);
-        $correctAnswer = getGcd($questionOperandOne, $questionOperandTwo);
-        $question = "$questionOperandOne $questionOperandTwo";
+        $operandOne = rand(1, 100);
+        $operandTwo = rand(1, 100);
+        $correctAnswer = getGcd($operandOne, $operandTwo);
+        $question = "$operandOne $operandTwo";
         return [$question, $correctAnswer];
     };
 

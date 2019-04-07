@@ -10,21 +10,21 @@ const OPERATORS = ['+', '-', '*'];
 function getGameData()
 {
     $generateData = function () {
-        $questionOperandOne = rand(0, 20);
-        $questionOperandTwo = rand(0, 20);
-        $questionOperator = OPERATORS[array_rand(OPERATORS)];
-        switch ($questionOperator) {
+        $operandOne = rand(0, 20);
+        $operandTwo = rand(0, 20);
+        $operator = OPERATORS[array_rand(OPERATORS)];
+        switch ($operator) {
             case '+':
-                $correctAnswer = $questionOperandOne + $questionOperandTwo;
+                $correctAnswer = $operandOne + $operandTwo;
                 break;
             case '-':
-                $correctAnswer = $questionOperandOne - $questionOperandTwo;
+                $correctAnswer = $operandOne - $operandTwo;
                 break;
             case '*':
-                $correctAnswer = $questionOperandOne * $questionOperandTwo;
+                $correctAnswer = $operandOne * $operandTwo;
                 break;
         }
-        $question = "$questionOperandOne $questionOperator $questionOperandTwo";
+        $question = "$operandOne $operator $operandTwo";
         return [$question, $correctAnswer];
     };
 
