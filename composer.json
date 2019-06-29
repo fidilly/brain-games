@@ -14,7 +14,7 @@
             "src/Games/Progression.php"
         ]
     },
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "fidilly",
